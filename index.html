@@ -430,12 +430,13 @@ if (chosen == "51") {
     <td><form name="theform" onSubmit="CheckForm()">
 <script type="text/javascript">Setup();</script>
     <td>
-    <table width="200" border="0">
+    <table width="563" border="0">
       <tr>
-        <td colspan="2"><strong>SACCOLA &reg; - Sistema Automatizado Cearense de Croquis, Ocorr&ecirc;ncias e Laudos</strong></td>
+        <td height="36" colspan="2"><p align="center"><strong>SACCOLA &reg;        </strong></p>
+        <p align="center"><strong>Sistema Automatizado Cearense de Croquis, Ocorr&ecirc;ncias e Laudos</strong></p></td>
       </tr>
       <tr>
-        <td><p>
+        <td width="557" height="102"><p>
           <select name="optone" size="1"  onChange="setOptions(document.theform.optone.options[document.theform.optone.selectedIndex].value,document.theform.opttwo);">
             <option value=" " selected="selected"> </option>
             <option value="1">MODELOS</option>
@@ -454,16 +455,13 @@ if (chosen == "51") {
           <select name="optthree" onChange="document.theform.modeloVESTIGIOS.value=this.value" id="optthree">
             <option value=" " selected="selected">SELECIONE PRIMEIRO ACIMA</option>
           </select>
-          </p>
-          <p><button type="button" onclick="myFunction()">SELECIONAR</button>
-
-<script>
+          <script>
 function myFunction() {
     document.getElementById("modeloVESTIGIOS").select();
 }
-</script>
-            <script type="text/javascript" src="jquery.min.js"></script>
-            <script>
+          </script>
+          <script type="text/javascript" src="jquery.min.js"></script>
+          <script>
 $(document).ready(function () {
     $('#send2').click(function () {
         var text = $('#modeloVESTIGIOS').val();
@@ -471,10 +469,9 @@ $(document).ready(function () {
         $('#modeloVESTIGIOS').val('');
     });
 });
-          </script>
-        </p></td>
-        <td><iframe src="croqui.html" name="croqui" width="520" marginwidth="0px" height="200px" marginheight="0px" scrolling="yes" frameborder="0" id="formulario" style="border:0px #FFFFFF none;"></iframe></td>
-      </tr>
+            </script>
+</p></td>
+              </tr>
     </table>
     <script>
 $(document).ready(function () {
@@ -486,7 +483,7 @@ $(document).ready(function () {
 });
 </script>
     <form ID="in2">
-    <textarea id="modeloVESTIGIOS" cols="68" rows="10" name="modeloVESTIGIOS" style="font-size: 14pt"></textarea>
+<textarea id="modeloVESTIGIOS" cols="30" rows="4" name="modeloVESTIGIOS" style="font-size: 14pt"></textarea>
         </form>
 <script type="text/javascript">
 <!--//
@@ -509,4 +506,4 @@ frames['croqui'].location.href = mySelect.options[PageIndex2].value;
 </script>
 
 <form name="selecionarcroqui">
-<textarea id="textolaudo" cols="68" rows="19" name="textolaudo" style="font-size: 14pt" ></textarea>
+<textarea id="textolaudo" cols="30" rows="11" name="textolaudo" style="font-size: 14pt" ></textarea>
