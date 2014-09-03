@@ -1,0 +1,512 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<html manifest="demo.appcache">
+<title>SACCOLA - Sistema Automatizado Cearense de Croquis Ocorr&ecirc;ncias e Laudos</title>
+<link rel="icon" type="image/jpg" href="favicon.jpg" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><style type="text/css">
+<!--
+body,td,th {
+	color: #000;
+	font-size: 14px;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: justify;
+}
+body {
+	background-color: #CCC;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	text-align: justify;
+}
+-->
+</style><table width="200" border="0">
+
+<script type="text/javascript">
+function setOptions(chosen, selbox) {
+
+selbox.options.length = 0;
+if (chosen == " ") {
+  selbox.options[selbox.options.length] = new Option('SELECIONE PRIMEIRO ACIMA',' ');
+setTimeout(setOptions(' ',document.opcao1.optthree),5);
+}
+if (chosen == "1") {
+  selbox.options[selbox.options.length] = new Option('MODELOS SELECIONADO','');
+  selbox.options[selbox.options.length] = new Option('AFOGAMENTO','12');
+  selbox.options[selbox.options.length] = new Option('CADAVER','13');
+  selbox.options[selbox.options.length] = new Option('FETO','14');
+  selbox.options[selbox.options.length] = new Option('INCENDIO','15');
+  selbox.options[selbox.options.length] = new Option('LOCAL','16');
+  selbox.options[selbox.options.length] = new Option('SUICIDIO','17');
+  selbox.options[selbox.options.length] = new Option('TENTATIVA','18');
+  selbox.options[selbox.options.length] = new Option('VEICULO','19')
+setTimeout(setOptions('11',document.opcao1.optthree),5);
+}
+if (chosen == "2") {
+  selbox.options[selbox.options.length] = new Option('LOCAL SELECIONADO','');
+  selbox.options[selbox.options.length] = new Option('URBANA','21');
+  selbox.options[selbox.options.length] = new Option('RURAL','22');
+setTimeout(setOptions('21',document.opcao1.optthree),5);
+}
+if (chosen == "3") {
+  selbox.options[selbox.options.length] = new Option('VESTIGIOS SELECIONADO','');
+  selbox.options[selbox.options.length] = new Option('BALISTICA','31');
+  selbox.options[selbox.options.length] = new Option('DROGAS','32');
+  selbox.options[selbox.options.length] = new Option('OBJETOS','33');
+  selbox.options[selbox.options.length] = new Option('SANGUE','34');
+  selbox.options[selbox.options.length] = new Option('OUTROS','35');
+setTimeout(setOptions('31',document.opcao1.optthree),5);
+}
+if (chosen == "4") {
+  selbox.options[selbox.options.length] = new Option('CADAVER SELECIONADO','');
+  selbox.options[selbox.options.length] = new Option('IDENTIFICAÇÃO','41');
+  selbox.options[selbox.options.length] = new Option('POSIÇÃO','42');
+  selbox.options[selbox.options.length] = new Option('VESTES E PERTENCES','43');
+  selbox.options[selbox.options.length] = new Option('PERINECROSCOPIA','44');
+setTimeout(setOptions('41',document.opcao1.optthree),5);
+}
+if (chosen == "5") {
+  selbox.options[selbox.options.length] = new Option('OUTROS SELECIONADO','');
+  selbox.options[selbox.options.length] = new Option('PRESERVAÇÃO','51');
+  selbox.options[selbox.options.length] = new Option('PAPILOSCOPIA','52');
+setTimeout(setOptions('51',document.opcao1.optthree),5);
+}
+if (chosen == "11") {
+  selbox.options[selbox.options.length] = new Option('AFOGAMENTO SELECIONADO','.');
+}
+if (chosen == "12") {
+  selbox.options[selbox.options.length] = new Option('AFOGAMENTO SELECIONADO','AFOGAMENTO');
+  selbox.options[selbox.options.length] = new Option('AFOGAMENTO','LOCAL: Geral: Tratava-se de área , formada por vegetação , à margem do , cujo acesso era feito pela rodovia . O local examinado foi relacionado às coordenadas 15, latitude sul, e 40, longitude oeste Vestígios: Nesse local, sobre o chão, via-se um cadáver, a ser descrito em item próprio, coberto por um lençol branco, com inscrições SES-GDF (Secretaria de Estado de Saúde - Governo do Distrito Federal), com a cabeça orientada para , distante m da margem do CADÁVER:Identificação: Adulto, do sexo masculino, de cor parda, com cabelos escuros curtos, não identificado no local; Em seu corpo foram observadas tatuagens Posição: O cadáver estava em decúbito dorsal, com a face voltada para . Os membros superiores estavam flexionados, com as mãos ; os inferiores estavam estendidos e ligeiramente afastados entre si. Vestes e pertences: A vítima trajava: bermuda ; e sunga . Apresentava ainda .Ressalte-se que os pertences foram entregues no local para o Agente de Polícia , matrícula , da a DP, que acompanhou os exames.Perinecroscopia: Ao examinarem externamente o corpo, os peritos criminais constataram: •	Rigidez cadavérica em instalação, perceptível nos membros e na articulação temporomandibular;•	Livores hipostáticos móveis, na região posterior do corpo;•	Cianose labial e dos leitos ungueais;•	Espuma rósea na boca e nas narinas;•	Distensão abdominal;•	Enrugamento da pele das mãos e dos pés.PAPILOSCOPIA: ISOLAMENTO/PRESERVAÇÃO: Quando da chegada da equipe pericial, havia uma equipe da a DP, chefiada pelo Agente de Polícia , matrícula , fazendo o isolamento do local a ser examinado. Contudo, a área isolada era insuficiente e teve que ser ampliada.ouQuando da chegada da equipe pericial, não havia qualquer equipe policial fazendo o isolamento e a preservação do local a ser examinado.OUTROS:');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "13") {
+  selbox.options[selbox.options.length] = new Option('CADAVER SELECIONADO','CADAVER');
+  selbox.options[selbox.options.length] = new Option('GERAL','•	LOCAL: Geral: Tratava-se de área , servida por pista , orientada na direção , dotada de iluminação elétrica , delimitada por meios-fios, ladeada por passeios , seguidos pelos lotes edificados , a , cujas fachadas principais eram oltadas para a citada pista. ouTratava-se de área , formada por vegetação , cujo acesso era feito pela rodovia  .o local examinado foi relacionado às coordenadas 15º, latitude sul, e 48º, longitude oeste•	Vestígios: , via-se um cadáver, a ser descrito em item próprio, sobre o piso, com a cabeça orientada para , distante m do limite anterior do Lote e m de seu limite . Sob a cabeça e parte de seu tronco, havia uma concentração de sangue, associada a manchas produzidas por escorrimento.•	Banco: Distante m do limite anterior do Lote e m do prolongamento imaginário de seu limite , via-se uma concavidade, com características típicas daquelas produzidas pelo impacto recente de projétil expelido por arma de fogo, em disparo efetuado da porção anterior para a posterior do lote, da para a , de cima para baixo Distante m do limite anterior do Lote e m do prolongamento imaginário de seu limite , via-se um orifício, com características típicas daquelas produzidas pela passagem recente de projétil expelido por arma de fogo, em disparo efetuado da porção anterior para a posterior do lote, da para a , de cima para baixo. Em seu interior, foi encontrado um •	SBF: Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , via-se um estojo de cartucho percutido, CBC - .380 AUTO•	Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , via-se um projétil expelido por arma de fogo, semiencamisado, de calibre , deformado•	Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , havia um fragmento de chumbo•	Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , via-se um fragmento de camisa de projétil expelido por arma de fogo, deformado•	Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , via-se um cartucho dotado de projétil semiencamisado de ponta ogival, montado em estojo CBC - .380 AUTO, que foi recolhido e encaminhado para a Seção de Balística Forense - SBF - deste Instituto, para arquivamento. •	SPAL: Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , havia uma concentração de sangue úmida, medindo cm por cm Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , viam-se manchas de sangue produzidas por , ocupando uma área de m por m Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , tinha início uma trilha de sangue sinuosa, composta por manchas produzidas por gotejamento e espargimento, com sentido de produção orientado de para , com extensão de m, que findava sobre ., de onde foram coletadas amostras, que foram encaminhadas para a Seção de Perícias e Análises Laboratoriais - SPAL - deste Instituto, para exames específicos.•	Objetos: Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , foi encontrada uma faca, com cabo plástico de cor bege e lâmina de gume único serrilhado e extremidade afilada. A faca tinha cm de comprimento (lâmina com cm) e cm de largura máxima, era eficiente para a prática de lesões incisas, perfuroincisas e contusas e foi recolhida e encaminhada ao Instituto de Identificação - II - da Polícia Civil do Distrito Federal - PCDF. Em sua lâmina, que estava fletida em relação ao eixo do cabo, foram encontradas manchas de sangue, de onde foram coletadas amostras, que foram encaminhadas para a Seção de Perícias e Análises Laboratoriais - SPAL - deste Instituto, para exames específicos.•	CADÁVER:Identificação: Adulto, do sexo masculino, de cor parda, com cabelos escuros curtos, não identificado no local; Em seu corpo foram observadas tatuagens •	Posição: O cadáver estava em decúbito , com a face voltada para . Os membros superiores estavam flexionados, ; os inferiores estavam estendidos e ligeiramente afastados entre si.•	Vestes e pertences: A vítima trajava: camiseta ; bermuda ; cueca ; e par de . Apresentava ainda . A camiseta .•	Ressalte-se que os pertences foram entregues no local para o Agente de Polícia , matrícula , da a DP, que acompanhou os exames.•	Perinecroscopia: Ao examinarem externamente o corpo, os peritos criminais constataram: •	Rigidez cadavérica , perceptível nos membros e na articulação temporomandibular;•	Livores hipostáticos , à exceção das áreas comprimidas;•	PAPILOSCOPIA: Conforme a Instrução Normativa número 158 da Polícia Civil do Distrito Federal, de 17 de fevereiro de 2014, sob supervisão e coordenação do chefe da equipe pericial - Perito Criminal Paulo Enio Garcia da Costa Filho -, o Papiloscopista Policial escalado ficou incumbido de pesquisar, revelar, coletar, e comparar as impressões papiloscópicas porventura existentes no local. Informamos, ainda, que foram coletados fragmentos dessas impressões no local. As demais informações relativas a esses fragmentos deixam de ser inseridas no contexto deste Laudo de Perícia Criminal, uma vez que não foram disponibilizadas pelo Instituto de Identificação ao Instituto de Criminalística.•	ISOLAMENTO/PRESERVAÇÃO: Quando da chegada da equipe pericial, havia uma equipe da a DP, chefiada pelo Agente de Polícia , matrícula , fazendo o isolamento do local a ser examinado. Contudo, a área isolada era insuficiente e teve que ser ampliada.ou Quando da chegada da equipe pericial, não havia qualquer equipe policial fazendo o isolamento e a preservação do local a ser examinado.•	OUTROS: ');
+  selbox.options[selbox.options.length] = new Option('HOMICIDIO EXTERNO','•	LOCAL: Geral: Tratava-se de área residencial, servida por pista asfaltada, orientada na direção , dotada de iluminação elétrica em funcionamento, delimitada por meios-fios, ladeada por passeios pavimentados, seguidos pelos lotes edificados do Conjunto , a , cujas fachadas principais eram voltadas para a citada pista.ou Tratava-se de área , formada por vegetação , cujo acesso era feito pela rodovia  .o local examinado foi relacionado às coordenadas 15º, latitude sul, e 4º, longitude oeste•	Vestígios: Na região em frente ao Lote , sobre , via-se um cadáver, a ser descrito em item próprio, coberto por lençol branco com inscrições "SES-GDF" (Secretaria de Estado de Saúde - Governo do Distrito Federal), com a cabeça orientada para , distante m do limite anterior do lote e m do prolongamento imaginário de seu limite . Sob a cabeça e parte de seu tronco, havia uma concentração de sangue, associada a manchas produzidas por escorrimento.•	Banco: Distante m do limite anterior do Lote e m do prolongamento imaginário de seu limite , via-se uma concavidade, com características típicas daquelas produzidas pelo impacto recente de projétil expelido por arma de fogo, em disparo efetuado da porção anterior para a posterior do lote, da para a , de cima para baixo Distante m do limite anterior do Lote e m do prolongamento imaginário de seu limite , via-se um orifício, com características típicas daquelas produzidas pela passagem recente de projétil expelido por arma de fogo, em disparo efetuado da porção anterior para a posterior do lote, da para a , de cima para baixo. Em seu interior, foi encontrado um •	SBF: Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , via-se um estojo de cartucho percutido, CBC - .380 AUTO•	Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , via-se um projétil expelido por arma de fogo, semiencamisado, de calibre , deformado•	Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , havia um fragmento de chumbo•	Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , via-se um fragmento de camisa de projétil expelido por arma de fogo, deformado•	Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , via-se um cartucho dotado de projétil semiencamisado de ponta ogival, montado em estojo CBC - .380 AUTO, que foi recolhido e encaminhado para a Seção de Balística Forense - SBF - deste Instituto, para arquivamento. •	SPAL: Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , havia uma concentração de sangue úmida, medindo cm por cm Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , viam-se manchas de sangue produzidas por , ocupando uma área de m por m Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , tinha início uma trilha de sangue sinuosa, composta por manchas produzidas por gotejamento e espargimento, com sentido de produção orientado de para , com extensão de m, que findava sobre ., de onde foram coletadas amostras, que foram encaminhadas para a Seção de Perícias e Análises Laboratoriais - SPAL - deste Instituto, para exames específicos.•	Objetos: Distante m do limite anterior do Lote e m do prolongamento imaginário do limite , sobre o , foi encontrada uma faca, com cabo plástico de cor bege e lâmina de gume único serrilhado e extremidade afilada. A faca tinha cm de comprimento (lâmina com cm) e cm de largura máxima, era eficiente para a prática de lesões incisas, perfuroincisas e contusas e foi recolhida e encaminhada ao Instituto de Identificação - II - da Polícia Civil do Distrito Federal - PCDF. Em sua lâmina, que estava fletida em relação ao eixo do cabo, foram encontradas manchas de sangue, de onde foram coletadas amostras, que foram encaminhadas para a Seção de Perícias e Análises Laboratoriais - SPAL - deste Instituto, para exames específicos.•	CADÁVER:Identificação: Adulto, do sexo masculino, de cor parda, com cabelos escuros curtos, não identificado no local;Em seu corpo foram observadas tatuagens •	Posição: O cadáver estava em decúbito , com a face voltada para . Os membros superiores estavam flexionados, com ; os inferiores estavam estendidos e ligeiramente afastados entre si.•	Vestes e pertences: A vítima trajava: camiseta ; bermuda ; cueca ; e par de . Apresentava ainda .A camiseta apresentava impregnações de sangue em ambas as faces e orifícios, com características típicas daquelas produzidas pela passagem recente de projétil expelido por arma de fogo em disparo efetuado a distância, sendo na face anterior e na face posterior, relacionados a feridas verificadas no cadáver, a serem descritas em item próprio A bermuda apresentava . Em seu bolso , havia .•	Ressalte-se que os pertences foram entregues no local para o Agente de Polícia , matrícula , da a DP, que acompanhou os exames.Perinecroscopia: Ao examinarem externamente o corpo, os peritos criminais constataram: •	Rigidez cadavérica em instalação, perceptível nos membros e na articulação temporomandibular;•	Livores hipostáticos móveis, na região  do corpo, à exceção das áreas comprimidas;•	Uma ferida perfurocontusa, doravante denominada OE, na região , com características cutâneas compatíveis com as daquelas produzidas pela entrada de projétil expelido por arma de fogo, em disparo efetuado a distância;•	Uma ferida perfurocontusa, doravante denominada OS, na região , com características compatíveis com as daquelas produzidas pela saída de projétil expelido por arma de fogo;•	Uma protuberância na região , com características compatíveis com as daquelas produzidas por projétil em região subcutânea;•	Uma ferida perfuroincisa, doravante denominada F, na região , em forma de botoeira, medindo cm, com bordos regulares, uma de suas extremidades arredondada e a outra angular, esta voltada para ;•	Escoriações em placa nos joelhos;•	Manchas de sangue produzidas por escorrimento a partir da  , com sentido de produção descendente, compatíveis com a posição em que foi encontrado o cadáver.•	PAPILOSCOPIA: Conforme a Instrução Normativa número 158 da Polícia Civil do Distrito Federal, de 17 de fevereiro de 2014, sob supervisão e coordenação do chefe da equipe pericial - Perito Criminal Paulo Enio Garcia da Costa Filho -, o Papiloscopista Policial escalado ficou incumbido de pesquisar, revelar, coletar, e comparar as impressões papiloscópicas porventura existentes no local. Informamos, ainda, que foram coletados fragmentos dessas impressões no local.As demais informações relativas a esses fragmentos deixam de ser inseridas no contexto deste Laudo de Perícia Criminal, uma vez que não foram disponibilizadas pelo Instituto de Identificação ao Instituto de Criminalística.•	ISOLAMENTO/PRESERVAÇÃO: Quando da chegada da equipe pericial, havia uma equipe da a DP, chefiada pelo Agente de Polícia , matrícula , fazendo o isolamento do local a ser examinado. Contudo, a área isolada era insuficiente e teve que ser ampliada. ou Quando da chegada da equipe pericial, não havia qualquer equipe policial fazendo o isolamento e a preservação do local a ser examinado.');
+  selbox.options[selbox.options.length] = new Option('HOMICIDIO INTERNO','•	LOCAL: Geral: Tratava-se de área residencial, servida por pista asfaltada, orientada na direção , dotada de iluminação elétrica em funcionamento / instalada, delimitada por meios-fios, ladeada por passeios pavimentados, seguidos pelos lotes edificados do Conjunto , a , e do Conjunto , a , cujas fachadas principais eram voltadas para a citada pista. o local examinado foi relacionado às coordenadas 15º, latitude sul, e 48º, longitude oeste •	O Lote , objeto dos exames, era contíguo a outros lotes nas laterais e nos fundos e era delimitado nessas porções por paredes/muros de alvenaria. Anteriormente, era delimitado por muro, grade e portão corrediço metálico, dotado de porta para pedestres, cujos sistemas de trancamento não apresentavam irregularidades. Era ocupado por / Abrigava edificaç de alvenaria de pavimento , em sua porção . edificação era acessada, a partir d , por uma porta metálica, cujo sistema de trancamento não apresentava irregularidades. Era constituída de cômodos, doravante denominados: . No interior dos cômodos , não foram encontrados elementos de interesse pericial.•	Vestígios: O cômodo , que media m por m, era acessado, a partir d , por uma porta de madeira, cujo sistema de trancamento não apresentava irregularidades. Era mobiliado com , em sua porção , e , em sua porção . Sobre o piso, via-se um cadáver, a ser descrito em item próprio, coberto por lençol , com a cabeça orientada para , distante m do limite anterior do cômodo e m de seu limite . Sob a cabeça e parte de seu tronco, havia uma concentração de sangue, associada a manchas produzidas por escorrimento.•	Banco: Distante m do limite anterior do e m de seu limite , via-se uma concavidade, com características típicas daquelas produzidas pelo impacto recente de projétil expelido por arma de fogo, em disparo efetuado da porção anterior para a posterior do lote, da para a , de cima para baixo.•	Distante m do limite anterior do e m de seu limite , via-se um orifício, com características típicas daquelas produzidas pela passagem recente de projétil expelido por arma de fogo, em disparo efetuado da porção anterior para a posterior do lote, da para a , de cima para baixo. Em seu interior, foi encontrado um•	SBF: Distante m do limite anterior do e m de seu limite , sobre o , via-se um estojo de cartucho percutido, CBC - .380 AUTO•	Distante m do limite anterior do e m de seu limite , sobre o , via-se um projétil expelido por arma de fogo, semiencamisado, de calibre , deformado•	Distante m do limite anterior do e m de seu limite , sobre o , havia um fragmento de chumbo•	Distante m do limite anterior do e m de seu limite , sobre o , via-se um fragmento de camisa de projétil expelido por arma de fogo, deformado •	Distante m do limite anterior do e m de seu limite , sobre o , via-se um cartucho dotado de projétil semiencamisado de ponta ogival, montado em estojo CBC - .380 AUTO, que foi recolhido e encaminhado para a Seção de Balística Forense - SBF - deste Instituto, para arquivamento.•	SPAL: Distante m do limite anterior do e m de seu limite , sobre o , havia uma concentração de sangue úmida, medindo cm por cm •	Distante m do limite anterior do e m de seu limite , sobre o , viam-se manchas de sangue produzidas por , ocupando uma área de m por m•	Distante m do limite anterior do e m de seu limite , sobre o , tinha início uma trilha de sangue sinuosa, composta por manchas produzidas por gotejamento e espargimento, com sentido de produção orientado de para , com extensão de m, que findava sobre . , de onde foram coletadas amostras, que foram encaminhadas para a Seção de Perícias e Análises Laboratoriais - SPAL - deste Instituto, para exames específicos.•	Objetos: Distante m do limite anterior do e m de seu limite , sobre o , foi encontrada uma faca, com cabo plástico de cor bege e lâmina de gume único serrilhado e extremidade afilada. A faca tinha cm de comprimento (lâmina com cm) e cm de largura máxima, era eficiente para a prática de lesões incisas, perfuroincisas e contusas e foi recolhida e encaminhada para o Instituto de Identificação - II - da Polícia Civil do Distrito Federal - PCDF. Em sua lâmina, que estava fletida em relação ao eixo do cabo, foram encontradas manchas de sangue, de onde foram coletadas amostras, que foram encaminhadas para a Seção de Perícias e Análises Laboratoriais - SPAL - deste Instituto, para exames específicos.•	CADÁVER: Identificação: Adulto, do sexo masculino, de cor parda, com cabelos escuros curtos, não identificado no local; Em seu corpo foram observadas tatuagens •	Posição: O cadáver estava em decúbito , com a face voltada para . Os membros superiores estavam flexionados, com ; os inferiores estavam estendidos e ligeiramente afastados entre si.•	Vestes e pertences: A vítima trajava: camiseta ; bermuda ; cueca ; e par de . Apresentava ainda .A camiseta apresentava impregnações de sangue em ambas as faces e orifícios, com características típicas daquelas produzidas pela passagem recente de projétil expelido por arma de fogo em disparo efetuado a distância, sendo na face anterior e na face posterior, relacionados a feridas verificadas no cadáver, a serem descritas em item próprio A bermuda apresentava . Em seu bolso , havia .•	Ressalte-se que os pertences foram entregues no local para o Agente de Polícia , matrícula , da a DP, que acompanhou os exames.•	Perinecroscopia: Ao examinarem externamente o corpo, os peritos criminais constataram: •	Rigidez cadavérica em instalação, perceptível nos membros e na articulação temporomandibular;•	Livores hipostáticos móveis, na região do corpo, à exceção das áreas comprimidas;•	Uma ferida perfurocontusa, doravante denominada OE, na região , com características cutâneas compatíveis com as daquelas produzidas pela entrada de projétil expelido por arma de fogo, em disparo efetuado a distância;•	Uma ferida perfurocontusa, doravante denominada OS, na região , com características compatíveis com as daquelas produzidas pela saída de projétil expelido por arma de fogo;•	Uma protuberância na região , com características compatíveis com as daquelas produzidas por projétil em região subcutânea;•	Uma ferida perfuroincisa, doravante denominada F, na região , em forma de botoeira, medindo cm, com bordos regulares, uma de suas extremidades arredondada e a outra angular, esta voltada para ;•	Manchas de sangue produzidas por escorrimento a partir da , com sentido de produção descendente, considerando a posição em que foi encontrado o cadáver.•	PAPILOSCOPIA: Conforme a Instrução Normativa número 158 da Polícia Civil do Distrito Federal, de 17 de fevereiro de 2014, sob supervisão e coordenação do chefe da equipe pericial - Perito Criminal Paulo Enio Garcia da Costa Filho -, o Papiloscopista Policial escalado ficou incumbido de pesquisar, revelar, coletar, e comparar as impressões papiloscópicas porventura existentes no local. Informamos, ainda, que foram coletados fragmentos dessas impressões no local. As demais informações relativas a esses fragmentos deixam de ser inseridas no contexto deste Laudo de Perícia Criminal, uma vez que não foram disponibilizadas pelo Instituto de Identificação ao Instituto de Criminalística.•	ISOLAMENTO/PRESERVAÇÃO: Quando da chegada da equipe pericial, havia uma equipe da a DP, chefiada pelo Agente de Polícia , matrícula , fazendo o isolamento do local a ser examinado. Contudo, a área isolada era insuficiente e teve que ser ampliada. ou Quando da chegada da equipe pericial, não havia qualquer equipe policial fazendo o isolamento e a preservação do local a ser examinado.');
+  selbox.options[selbox.options.length] = new Option('PODRÃO','•	LOCAL: Geral: Tratava-se de área , servida por pista , orientada na direção , dotada de iluminação elétrica , delimitada por meios-fios, ladeada por passeios , seguidos pelos lotes edificados , a , cujas fachadas principais eram voltadas para a citada pista. ou Tratava-se de área , formada por vegetação , cujo acesso era feito pela rodovia . O local examinado foi relacionado às coordenadas 15º, latitude sul, e 48º, longitude oeste . O Lote , objeto dos exames, era contíguo a outros lotes nas laterais e nos fundos e era delimitado nessas porções por paredes/muros de alvenaria. Anteriormente, era delimitado por muro, grade e portão corrediço metálico, dotado de porta para pedestres, cujos sistemas de trancamento não apresentavam irregularidades. Era ocupado por edificaç de alvenaria de pavimento , em sua porção . edificação era acessada, a partir d , por uma porta metálica, cujo sistema de trancamento não apresentava irregularidades. Era constituída de cômodos, doravante denominados: . No interior dos cômodos , não foram encontrados elementos de interesse pericial.•	Vestígios: O cômodo , que media m por m, era acessado, a partir d , por uma porta de madeira, cujo sistema de trancamento não apresentava irregularidades. Era mobiliado com , em sua porção , e , em sua porção . Sobre o piso, via-se um cadáver, a ser descrito em item próprio, sobre o piso, com a cabeça orientada para , distante m do limite anterior do cômodo e m de seu limite . Sob o cadáver, havia uma concentração de um líquido de odor pútrido e tonalidade pardo-avermelhada, proveniente da putrefação do corpo, associado a larvas e ovos de insetos.•	CADÁVER:Identificação: Adulto, do sexo masculino, com cabelos escuros curtos, não identificado no local; Em seu corpo foram observadas tatuagens •	Posição: O cadáver estava em decúbito , com a face voltada para . Os membros superiores estavam  ; os inferiores estavam  . •	Vestes e pertences: A vítima trajava: camiseta ; bermuda ; cueca ;  e par de . Apresentava também . A camiseta apresentava . •	Ressalte-se que os pertences foram entregues no local para o Agente de Polícia , matrícula , da a DP, que acompanhou os exames.•	Perinecroscopia: Ao examinarem externamente o corpo, os peritos criminais constataram que estava nas fases cromática e gasosa da putrefação, com:•	Livores hipostáticos fixos na face posterior do corpo, à exceção das áreas comprimidas;•	Escurecimento da pele, especialmente da cabeça e da face;•	Flictenas espalhadas pela superfície do corpo;•	Destacamento epidérmico;•	Circulação póstuma de Brouardel;•	Protrusão lingual;•	Distensão abdominal e genital;•	•	PAPILOSCOPIA: Conforme a Instrução Normativa número 158 da Polícia Civil do Distrito Federal, de 17 de fevereiro de 2014, sob supervisão e coordenação do chefe da equipe pericial - Perito Criminal Paulo Enio Garcia da Costa Filho -, o Papiloscopista Policial escalado ficou incumbido de pesquisar, revelar, coletar, e comparar as impressões papiloscópicas porventura existentes no local. Informamos, ainda, que foram coletados fragmentos dessas impressões no local. As demais informações relativas a esses fragmentos deixam de ser inseridas no contexto deste Laudo de Perícia Criminal, uma vez que não foram disponibilizadas pelo Instituto de Identificação ao Instituto de Criminalística.•	ISOLAMENTO/PRESERVAÇÃO: Quando da chegada da equipe pericial, havia uma equipe da a DP, chefiada pelo Agente de Polícia , matrícula , fazendo o isolamento do local a ser examinado. Contudo, a área isolada era insuficiente e teve que ser ampliada. ou Quando da chegada da equipe pericial, não havia qualquer equipe policial fazendo o isolamento e a preservação do local a ser examinado.•	OUTROS: ');
+  selbox.options[selbox.options.length] = new Option('SOBRE A CALÇADA','2	EXAMES 2.1	Do Local •	Tratava-se de uma área predominantemente residencial, dividida em conjuntos de lotes, servida por vias asfaltadas e dotadas de iluminação pública, que se encontrava em funcionamento no momento dos exames. •	Os Conjuntos “L” da QR 303 e “L” da QR 203 eram separados entre si por meio de uma pista, denominada neste laudo de “Via A”, que era reta, delimitada nas laterais por meios-fios seguidos dos passeios públicos, que, por sua vez, eram seguidos de edificações construídas em alvenaria, delimitadas por grades, portões e/ou muros em suas porções anteriores e laterais. Os conjuntos em questão eram separados de uma praça localizada ao sul dos mesmos, por meio de uma pista, denominada, neste laudo, de “Via B”, que apresentava as mesmas características daquela descrita anteriormente. No local dos exames, as Vias A e B formavam uma intersecção do tipo entroncamento. •	Por meio de aparelho de GPS (da sigla do inglês Global Positioning System – Sistema de Posicionamento Global), o local dos exames foi relacionado às coordenadas 16º02’11,7” latitude sul e 48º01’50,4” longitude oeste, usando-se o sistema geodésico (datum horizontal)  WGS-84. •	O Lote 4 do Conjunto “L” da QR 303 era de esquina, delimitado na parte anterior   e na lateral esquerda por muros construídos em alvenaria, e apresentava, na parte anterior, um portão de grade metálica para passagem de pedestres. No trecho de passeio público que margeava o lote em questão o piso era de terra batida com trechos cobertos por gramíneas, onde também havia alguns arbustos de pequeno e médio porte. Na região em frente o portão, o piso era coberto por brita e à direita havia ainda um monte de areia. No local, sobre a brita que recobria o piso do passeio público, em frente ao portão na parte anterior do Lote 4, havia um cadáver, a ser descrito em item próprio, coberto por tecido branco com inscrições da Secretaria de Saúde do Distrito Federal, cuja cabeça estava orientada para o norte e situada 2,9 m à direita do alinhamento da lateral esquerda e 0,60 m do limite anterior do Lote 4. •	Nas pistas das Vias A e B e no passeio público à esquerda e à frente do Lote 4 do Conjunto “L” da QR 303, observaram-se, ainda, os seguintes elementos materiais de interesse pericial:');
+  selbox.options[selbox.options.length] = new Option('ESQUINA/DUAS VIAS','2	EXAMES 2.1	Do Local•	A Avenida Comercial, no Setor Tradicional em São Sebastião, era uma via pública asfaltada, dotada de iluminação pública instalada, composta por duas pistas com sentidos opostos de tráfego, separadas por canteiro central. A pista de interesse, aqui denominada Via 1, de sentido Sudeste – Noroeste, no local dos exames, era reta e plana, composta por duas faixas de trânsito, separadas por linha simples seccionada de cor branca, delimitada por meios-fios seguidos, à esquerda, pelo canteiro central e à direita por calçadas cimentadas. Havia, no local dos exames, outra via pública, asfaltada, margeada por meios-fios seguidos de calçadas cimentadas, com iluminação pública instalada, aqui denominada Via 2,  à direita  e perpendicular à Via 1, que formava com esta uma intersecção do tipo entroncamento. Na esquina entre as Vias 1 e 2 estava localizado o Lote 641, que será utilizado como referencial para posicionamento de vestígios neste laudo.•	Por meio de aparelho de GPS (da sigla do inglês Global Positioning System – Sistema de Posicionamento Global), o local dos exames foi relacionado às coordenadas 15º53’36,0” latitude sul e 47º46’38,6” longitude oeste, usando-se o sistema geodésico (datum horizontal)  WGS-84.•	Tombado sobre a superfície asfáltica da Via 1, em frente ao Lote 641, havia um cadáver, a ser descrito em item próprio, coberto por tecido branco com inscrições da Secretaria de Saúde do Distrito Federal, cuja cabeça estava orientada para o oeste e distava 15,89 m do limite anterior  do Lote 641 e 0,40 m do prolongamento da lateral esquerda deste mesmo lote.•	Nas pistas das Vias 1 e 2, observaram-se os seguintes elementos materiais de interesse pericial, produzidos em época recente aos exames:');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "14") {
+  selbox.options[selbox.options.length] = new Option('FETO SELECIONADO','FETO');
+  selbox.options[selbox.options.length] = new Option('FETO','LOCAL: Geral: Tratava-se de área destinada ao recebimento e tratamento de esgoto urbano, situada . O local onde se concentraram os exames era composto pela tubulação de chegada do esgoto à estação e por grades de separação de dejetos. ou Tratava-se de área , formada por vegetação , cujo acesso era feito pela rodovia  . O local examinado foi relacionado às coordenadas 15o, latitude sul, e 4o, longitude oeste . VESTÍGIOS: Na região , sobre o piso, via-se um cadáver de feto, a ser descrito em item próprio, coberto por .CADÁVER: Tratava-se de cadáver de feto, do sexo , com estatura de cm, comprimento crânio-caudal de cm, perímetro cefálico de cm e comprimento do pé de cm. Apresentava extremidades bem definidas e cabelos. A pele tinha aspecto . Estava ligado à placenta, que tinha dimensão máxima de cm, por cordão umbilical, que media cm. PAPILOSCOPIA: Conforme a Instrução Normativa número 158 da Polícia Civil do Distrito Federal, de 17 de fevereiro de 2014, sob supervisão e coordenação do chefe da equipe pericial - Perito Criminal Paulo Enio Garcia da Costa Filho -, o Papiloscopista Policial escalado ficou incumbido de pesquisar, revelar, coletar, e comparar as impressões papiloscópicas porventura existentes no local. Informamos, ainda, que foram coletados fragmentos dessas impressões no local. As demais informações relativas a esses fragmentos deixam de ser inseridas no contexto deste Laudo de Perícia Criminal, uma vez que não foram disponibilizadas pelo Instituto de Identificação ao Instituto de Criminalística. ISOLAMENTO/PRESERVAÇÃO: Quando da chegada da equipe pericial, havia uma equipe da a DP, chefiada pelo Agente de Polícia , matrícula , fazendo o isolamento do local a ser examinado. Contudo, a área isolada era insuficiente e teve que ser ampliada. ou Quando da chegada da equipe pericial, não havia qualquer equipe policial fazendo o isolamento e a preservação do local a ser examinado.');
+  selbox.options[selbox.options.length] = new Option('ENCONTRADO EM CONTAINER','EXAMES 2.1 Do local Tratava-se de uma área comercial, situada entre as Quadras residenciais 05 e 07 de Sobradinho I, Distrito Federal. Nesta área comercial, funcionava, dentre outros estabelecimentos, uma Agência do Banco do Brasil. Ao norte desta, observava-se um estacionamento de veículos, em superfície asfáltica, contígua a uma área pavimentada com brita, também destinada a estacionamento de veículos, situada a leste da referida agência. A sul, por sua vez, observava-se uma área desprovida de pavimentação, coberta ora por vegetação arbustiva, ora por terra batida, sendo limitada também ao sul por via pública que servia alguns conjuntos da Quadra residencial 05 de Sobradinho I. Tal via era composta por duas faixas de rolamento, com sentidos opostos de tráfego, delimitadas lateralmente por meios-fios e providas de iluminação pública artificial.•	Neste local, mostrou-se de interesse pericial o trecho de via pública situado a sul da Agência do Banco do Brasil, tendo sido correlacionado às coordenadas: 15º 38 51.8" Sul e 47º 48’ 17.7" Oeste, obtidas com instrumento GPS (do inglês, Global Positioning System) com projeção geodésica (datum) WGS-84. Nas imediações deste ponto, adjacente ao meio-fio que limitava ao sul a área desprovida de pavimentação, distante 8,1 m do limite sul da Agência do Banco do Brasil e 5,5 m do seu limite leste, encontrava-se um container de lixo, confeccionado em material plástico na cor cinza, parcialmente preenchido com lixos diversos, apresentando odor pútrido e diversos exemplares de dípteros (moscas), tendo sido observado em seu interior um cadáver de recém-nascido, a ser descrito em item próprio. O cadáver estava envolto em duas toalhas, um lençol estampado e por segmentos de plástico preto e transparente, bem como por uma sacola de papelão, com inscrição “Cinderela” em uma de suas faces. •	Uma das toalhas apresentava cor rosa, confeccionada em algodão, possuindo impregnações de substância pardo-avermelhada e, em algumas áreas, impregnações de substância com tonalidade esverdeada, estando ambas localizadas principalmente em sua porção central. A outra toalha, apresentava cor azul, possuindo impregnações de substâncias pardo-avermelhadas na região central e em uma de suas extremidades, área esta com deposição de ovos de insetos. Adicionalmente, o lençol estampado, nas cores branca e rosa, apresentava impregnação de substância viscosa, de tonalidade pardo-esverdeada em uma de suas faces, junto às suas extremidades. Ressalte-se que um segmento da toalha rosa foi recolhido e encaminhado para a Seção de Perícias e Análises Laboratoriais deste Instituto. •	2.2	Do cadáver Tratava-se de um cadáver humano, de sexo masculino, de cor branca, com comprimento de 47 cm, peso de 2640 g, distância crânio-caudal de 35 cm, perímetro cefálico de 37 cm, comprimento do pé de 6,5 cm, cujo cordão umbilical estava irregularmente seccionado, apresentando tonalidade escurecida e achatamento. Aparentava estar em idade gestacional entre 36 e 38 semanas. Foram recolhidas amostras de sangue do cadáver visando a futuros exames que, porventura, se fizerem necessários.•	2.2.1 Perinecroscopia•	Ao examinarem o corpo externamente, que se encontrava, aparentemente, bem formado e com desenvolvimento normal, não foi observada rigidez cadavérica à manipulação. Foi constatado que o cadáver estava em fase cromática da putrefação (mancha verde espalhada pelo corpo), com destacamento epidérmico e depósitos de ovos de insetos, especialmente na face, apresentando, ainda, congestão e amassamento nessa região. Além disso, observou-se aumento do seu volume escrotal e presença de substância pardo-esverdeada, similar a mecônio, junto ao ânus. Não foram encontradas lesões em seu corpo.•	2.2.2 Necroscopia•	Consta do Laudo de Exame de Corpo de Delito nº 35.675/13 (CADAVÉRICO) – do Instituto de Medicina Legal Leonídio Ribeiro - IMLLR, que o tempo estimado de morte ocorreu entre 72h a 96h dos exames, não tendo sido possível determinar a causa da morte, tampouco se ocorreu intraútero ou se houve nascimento com vida. •	2.3	De Laboratório•	2.3.1 Sangue•	Na Seção de Perícias e Análises Laboratoriais – SPAL deste Instituto, a amostra da toalha coletada durante os exames foi submetida à pesquisa de sangue, por meio de testes específicos, tendo apresentado resultado positivo para sangue humano, não sendo, contudo, possível determinar o correspondente grupo sanguíneo e o fator Rh. •	2.2.2 DNA•	Parte da amostra citada no item anterior e as amostras de sangue do cadáver foram encaminhadas à Central de Guarda e Custódia de Vestígios – CGCV desta Polícia Civil, para arquivamento e realização de futuros exames que porventura se fizerem necessários.•	3 ISOLAMENTO DO LOCAL•	Quando da chegada da equipe pericial, o local encontrava-se preservado/isolado por guarnição da 13ª Delegacia de Polícia Civil do Distrito Federal. •	3	DISCUSSÃO E CONCLUSÃO•	As impregnações de sangue nas toalhas que envolviam o cadáver e encontravam-se justapostas aos segmentos plásticos e à sacola de papelão indicam que este fora embalado intencionalmente e sugerem que ele foi abandonado juntamente com tais objetos, em época recente, naquele local. Adicionalmente, a ausência de manchas de sangue e da placenta em suas proximidades, bem como a secção do cordão umbilical sugere que a expulsão uterina tenha ocorrido em local diverso ao examinado. Cumpre salientar, contudo, que a idade gestacional estimada entre 36 e 38 semanas, o peso de 2640 g e o desenvolvimento aparentemente normal  se fazem circunstâncias que, isoladamente, viabilizariam a vida, em caso de nascido vivo.•	Diante dos elementos materiais assinalados e em conjunto com os exames complementares acima expostos, ficam as peritas criminais impossibilitadas de determinar se trata-se de um recém-nascido que veio a óbito, em circunstâncias que não puderam ser determinadas, ou se trata-se de um natimorto que foi expulso do útero já sem vida. •	Nada mais havendo a lavrar, encerra-se o presente laudo, composto de 13 (treze) páginas, que, relatado pela perita criminal Renato Queiroz Nogueira Lira, lido e achado conforme pela perita criminal X, segue devidamente assinado.');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "15") {
+  selbox.options[selbox.options.length] = new Option('INCENDIO SELECIONADO','INCENDIO');
+  selbox.options[selbox.options.length] = new Option('INCENDIO','XXX');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "16") {
+  selbox.options[selbox.options.length] = new Option('LOCAL SELECIONADO','LOCAL');
+  selbox.options[selbox.options.length] = new Option('EXTERNO','XXX');
+  selbox.options[selbox.options.length] = new Option('INTERNO','XXX');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "17") {
+  selbox.options[selbox.options.length] = new Option('SUICIDIO SELECIONADO','SUICIDIO');
+  selbox.options[selbox.options.length] = new Option('ENFORCAMENTO EXTERNO','XXX');
+  selbox.options[selbox.options.length] = new Option('ENFORCAMENTO INTERNO','XXX');
+  selbox.options[selbox.options.length] = new Option('PROJEÇÃO','•	LOCAL: Geral: Tratava-se de área , formada por conjuntos de lotes ocupados por edificações de alvenaria, acessível por meio de pistas asfaltadas, dotadas de iluminação elétrica , delimitadas por meios-fios e ladeadas por passeios.o local examinado foi relacionado às coordenadas 15º, latitude sul, e 48º, longitude oeste. O era uma edificação composta por pavimentos, sendo um subterrâneo, um pavimento térreo e superiores e cujo acesso era feito por .•	Vestígios: À frente da fachada da edificação, um dos locais onde se concentraram os exames, via-se um cadáver, a ser descrito em item próprio, coberto por um lençol branco com inscrições "SES-GDF" (Secretaria de Estado de Saúde - Governo do Distrito Federal), com a cabeça orientada para , distante m desta fachada e m do prolongamento imaginário de sua fachada . Sob a cabeça e parte de seu tronco, havia uma concentração de sangue, associada a manchas produzidas por escorrimento.•	O outro local onde se concentraram os exames foi , localizado no o andar da edificação. O acesso a ele era feito, a partir d , por uma porta de , cujo sistema de trancamento não apresentava irregularidades. Era composto por cômodos, doravante denominados: .•	O cômodo , que media m por m, era acessado, a partir d , por uma porta de madeira, cujo sistema de trancamento não apresentava irregularidades. Era mobiliado com , em sua porção , e , em sua porção . Em sua parede , havia uma janela composta por folhas de vidro , alinhada com a posição em que foi encontrado o cadáver, com peitoril distante m do piso. Quando aberta, proporcionava um vão de m por m, suficiente para a passagem de pessoa(s), e estava localizada a aproximadamente m de altura do piso do pavimento térreo.•	CADÁVER: Identificação: Adulto, do sexo masculino, de cor , com cabelos escuros curtos,  não identificado no local;Em seu corpo foram observadas tatuagens •	Posição: O cadáver estava em decúbito , com a face voltada para . Os membros superiores estavam ; os inferiores estavam .•	Vestes e pertences: A vítima trajava: camiseta ; bermuda ; cueca ; e par de . Apresentava ainda .A camiseta .•	Ressalte-se que os pertences foram entregues no local para o Agente de Polícia , matrícula , da a DP, que acompanhou os exames.•	Perinecroscopia: Ao examinarem externamente o corpo, os peritos criminais constataram: •	Rigidez cadavérica em instalação, perceptível nos membros e na articulação temporomandibular;•	Livores hipostáticos móveis no , à exceção das áreas de compressão;•	Feridas contusas•	Fraturas•	Equimoses e escoriações•	PAPILOSCOPIA: Conforme a Instrução Normativa número 158 da Polícia Civil do Distrito Federal, de 17 de fevereiro de 2014, sob supervisão e coordenação do chefe da equipe pericial - Perito Criminal Paulo Enio Garcia da Costa Filho -, o Papiloscopista Policial escalado ficou incumbido de pesquisar, revelar, coletar, e comparar as impressões papiloscópicas porventura existentes no local. Informamos, ainda, que foram coletados fragmentos dessas impressões no local. As demais informações relativas a esses fragmentos deixam de ser inseridas no contexto deste Laudo de Perícia Criminal, uma vez que não foram disponibilizadas pelo Instituto de Identificação ao Instituto de Criminalística.•	ISOLAMENTO/PRESERVAÇÃO: Quando da chegada da equipe pericial, havia uma equipe da a DP, chefiada pelo Agente de Polícia , matrícula , fazendo o isolamento do local a ser examinado. Contudo, a área isolada era insuficiente e teve que ser ampliada. ou Quando da chegada da equipe pericial, não havia qualquer equipe policial fazendo o isolamento e a preservação do local a ser examinado.•	OUTROS: ');
+  selbox.options[selbox.options.length] = new Option('TIRO','XXX');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "18") {
+  selbox.options[selbox.options.length] = new Option('TENTATIVA SELECIONADO','TENTATIVA');
+  selbox.options[selbox.options.length] = new Option('EXTERNO','XXX');
+  selbox.options[selbox.options.length] = new Option('INTERNO','XXX');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "19") {
+  selbox.options[selbox.options.length] = new Option('VEICULO SELECIONADO','VEICULO');
+  selbox.options[selbox.options.length] = new Option('CARRO','Tratava-se do Volkswagen/Saveiro Cross, de cor vermelha, duas portas, ano de fabricação/modelo 2012/2013, portando as placas de licenciamento JKB 1552 – DF e ostentando o Número de Identificação Veicular – NIV 9BWLB45U1DP065971. No momento dos exames, o hodômetro do veículo em questão registrava 48.606 km como sendo a distância total percorrida por ele. O veículo examinado apresentava marcas de fricção na maçaneta da porta esquerda e na lateral posterior esquerda, ambas sem características de recentidade. Na porção central do painel anterior, constatou-se a presença do aparelho de som. O estepe do veículo se encontrava ausente no momento dos exames.');
+  selbox.options[selbox.options.length] = new Option('MOTO','XXX');
+  selbox.options[selbox.options.length] = new Option('CARRO SEM VESTÍGIOS','DO VEÍCULO Tratava-se de um veículo da marca VW – Volkswagem, modelo Gol Special, duas portas, cor verde, ano de fabricação/ano modelo 1999/2000, ostentando a placa de identificação JFU – 1657 de Brasília – DF. Foi identificado pelo Número de Identificação Veicular – NIV: 9BWZZZ377YPO36635, com Certificado de Registro e Licenciamento de Veículo CRLV - do ano de 2013 em nome de EDMAR JOSÉ DE PAIVA. Ostentava em seu painel hodômetro com quilometragem total de 113.208 km; os sistemas de freio, direção e iluminação funcionavam normalmente e, no interior do porta-malas, observou-se a presença do pneumático/roda sobressalente (estepe) bem como a de equipamentos como chave de roda, macaco hidráulico e triângulo. Quando dos exames, foram constatadas avarias não recentes, além daquelas comuns ao tempo e ao uso, como: •	marcas de fricção com incrustação de material arenoso de cor branca localizadas na lataria, acima do pneumático posterior direito; •	marca de fricção linear, com características de ter sido produzida pela ação de objeto rígido, localizada na região central da porta direita; •	marcas de fricção com desprendimento de pintura, localizadas no ângulo posterior esquerdo do para-choque posterior;  •	quebramento, produzida pelo emprego de instrumento rígido, da extremidade externa do cilindro da fechadura da porta esquerda;  No veículo, foi realizada uma minuciosa busca por outros vestígios, sem, contudo, lograr-se êxito. 3.2 Impressões Papiloscópicas Conforme Instrução Normativa no 138 da Polícia Civil do Distrito Federal, de 25 de maio de 2011, sob supervisão e coordenação da chefe da equipe pericial – peritO criminal Renato Queiroz Nogueira Lira -, o papiloscopista policial escalado ficou incumbido de pesquisar, revelar, coletar e comparar as impressões papiloscópicas porventura existentes no veículo. As demais informações relativas aos fragmentos papiloscópicos deixam de ser inseridas no contexto deste Laudo de Perícia Criminal, uma vez que elas não foram disponibilizadas pelo Instituto de Identificação ao Instituto de Criminalística. 4 DISCUSSÃO E CONCLUSÃO A exiguidade dos vestígios materiais assinalados no veículo VW/Gol Special, portador das placas de identificação JFU-1657-DF, impossibilitou a comprovação material da sua correlação com a ocorrência de tentativa de latrocínio, um dos objetivos deste Laudo de Perícia Criminal. Por sua vez, a avaria constatada no sistema de trancamento da porta esquerda do veículo possibilitaria a abertura (destrancamento) dessa porta sem o uso da chave apropriada. Contudo, os elementos materiais disponíveis às signatárias não permitem esclarecer em que circunstâncias esse fato ocorreu, admitindo-se a hipótese de estar relacionado à ocorrência de furto de veículo, também objetivo deste Laudo de Perícia Criminal.');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "21") {
+  selbox.options[selbox.options.length] = new Option('URBANO SELECIONADO','URBANO');
+  selbox.options[selbox.options.length] = new Option('APARTAMENTO','XXX');
+  selbox.options[selbox.options.length] = new Option('CASA','XXX');
+  selbox.options[selbox.options.length] = new Option('CONDOMINIO','O lote em questão era delimitado por muros de alvenaria e o acesso ao seu interior ocorria por meio de um portão metálico situado na porção direita do limite anterior . Esse portão era corrediço, próprio para a passagem de veículos e possuía, embutido em sua porção direita, uma porta metálica, pivotante de eixo lateral, própria para a passagem de pedestres. O sistema de trancamento do portão era realizado por meio de alças transpassadas por cadeado. A porta possuía sistema de trancamento feito por uma fechadura de sobrepor com chave yale, instalada em sua face interna. Não foram constatadas irregularidades nos sistemas de trancamento. A porta encontrava-se aberta quando da chegada da equipe pericial.');
+  selbox.options[selbox.options.length] = new Option('CASA COM PORTÃO CAIXA FERROLHO','Tratava-se de uma área urbana, residencial, dividida em conjuntos de lotes, servidos por vias públicas asfaltadas, margeadas por meios-fios, seguidos ora por calçadas/rampas de concreto, ora por área de vegetação gramínea, dotadas de iluminação pública artificial, que se encontrava em funcionamento no momento dos exames. O Conjunto 04 da QNQ 02 era composto por lotes contíguos, sendo o Lote 07 servido a sudeste por uma via pública asfaltada. Era delimitado externamente por muros de alvenaria e acessado por meio de um portão metálico de correr instalado na porção esquerda do seu limite anterior. Este portão, de cor vinho, apresentava, instalada em seu limite esquerdo, uma porta metálica, à semelhança do portão, destinada à passagem de pedestres, cujo sistema de trancamento, composto por fechadura convencional,  do tipo sobrepor interna, da marca “Stam”, apresentava-se íntegro ao momento dos exames. O local examinado foi relacionado às coordenadas: 15º 48’ 22.7’’ Sul e 48º 08’ 27.1’’ Oeste, obtidas com instrumento GPS (do inglês, Global Positioning System) com projeção geodésica (datum) WGS.');
+  selbox.options[selbox.options.length] = new Option('EDIFICACAO SEM INTERESSE','A residência, localizada na porção centro-posterior do Lote 3B, compreendia uma edificação com 12,36 m de largura e 20,19 m de comprimento, cujo acesso principal ao seu interior era mediado por uma porta de madeira, pivotante, localizada na porção esquerda do limite anterior. Internamente, a residência compreendia nove cômodos, os quais: uma sala com três ambientes, um quarto, um lavabo, três suítes, uma cozinha, uma área de serviço e uma dependência de serviço.');
+  selbox.options[selbox.options.length] = new Option('ÁREA COMERCIAL','O Lote 04 da C 12 era totalmente ocupado por uma edificação construída em alvenaria, de quatro pavimentos, apresentando alpendres de concreto adjacentes aos limites anterior  e posterior e destinada ao funcionamento de estabelecimentos comerciais, entre eles, o de nome fantasia “XXX”, localizado no seu andar térreo.•	Os exames se concentraram na área pública localizada nas adjacências do limite posterior da edificação aludida, que era pavimentada por calçadas de cimento e por bloquetes de concreto e apresentava, entre outros, postes de iluminação pública (em funcionamento), bancos construídos em concreto e canteiros com exemplares de vegetação arbórea.');
+  selbox.options[selbox.options.length] = new Option('PRAÇA','•	Na praça aludida, que foi objeto dos exames, havia, entre outros, calçadas de concreto, canteiros cobertos por vegetação rasteira composta de gramíneas, com alguns exemplares de vegetação arbórea, um parque com brinquedos infantis, equipamentos destinados aos praticantes de ginástica/musculação, um campo de areia e uma quadra poliesportiva delimitada por cercas metálicas do tipo alambrado. •	Próximo ao alambrado, sobre a calçada de concreto localizada na margem oeste da quadra poliesportiva mencionada, via-se um cadáver, que será descrito no item 2.2, parcialmente coberto por um lençol de cor branca, ostentando inscrições da Secretaria de Estado de Saúde do Distrito Federal – SES/DF e com a cabeça orientada para o norte, disposta às distâncias de 0,40 m (quarenta centímetros) do prolongamento da linha limítrofe anterior  e a 0,60 m (sessenta centímetros) do limite lateral esquerdo daquela quadra. Sobre as bordas do lençol mencionado, viam-se blocos de concreto que evitavam que ele fosse removido pela ação do vento.');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "22") {
+  selbox.options[selbox.options.length] = new Option('RURAL SELECIONADO','RURAL');
+  selbox.options[selbox.options.length] = new Option('CHÁCARA','XXX');
+  selbox.options[selbox.options.length] = new Option('EDIFICACAO SEM INTERESSE','A residência, localizada na porção centro-posterior do Lote 3B, compreendia uma edificação com 12,36 m de largura e 20,19 m de comprimento, cujo acesso principal ao seu interior era mediado por uma porta de madeira, pivotante, localizada na porção esquerda do limite anterior. Internamente, a residência compreendia nove cômodos, os quais: uma sala com três ambientes, um quarto, um lavabo, três suítes, uma cozinha, uma área de serviço e uma dependência de serviço.');
+  selbox.options[selbox.options.length] = new Option('CHÁCARA EXTERNO','•	A edificação em apreço situava-se em uma fração daquela chácara, que era delimitada por cerca constituída de mourões de madeira e fios de arame farpado, que tinha o acesso ao seu interior feito a partir das porções medial e esquerda do limite anterior , por meio de dois portões metálicos, pivotantes, destinados a passagem de pedestres e de veículos, respectivamente, sem sistemas de trancamento instalados e nos quais não foram observadas irregularidades.•	A residência aludida era dividida em seis cômodos distribuídos em uma sala, uma suíte, um quarto (com dois ambientes), uma cozinha, um banheiro e uma varanda/área de serviço (externa). A varanda/área de serviço era guarnecida por muretas construídas em alvenaria, encimadas por gradil metálico e por um portão também metálico, corrediço, instalado na porção posterior da mureta limítrofe lateral esquerda, com sistema de trancamento constituído de alças para cadeado. O acesso ao interior daquela edificação era feito:- por meio de uma grade metálica seguida de uma porta também metálica, fechada por placas de vidro, ambas pivotantes, com sistemas de trancamento constituídos, respectivamente, de dois ferrolhos com alças para cadeados; e de uma fechadura do tipo Yale e outras duas do tipo tetra, voltadas para a sala;- a partir da varanda/área de serviço, por meio de uma porta metálica com as mesmas características da descrita no item anterior, voltada para a cozinha.•	Durante os exames, não foram observadas irregularidades nas vias de acesso em questão. Ressalte-se que todas as janelas daquela edificação apresentavam grade e gradil metálicos instalados e que aquela residência era dotada de sistema de alarme, sendo possível observar sensores de infravermelho (presença) na cozinha e na sala, e sensores magnéticos nas suas portas e janelas. ');
+  selbox.options[selbox.options.length] = new Option('CHÁCARA INTERNO','•	A residência em apreço encontrava-se mobiliada com móveis de uso residencial e com objetos diversos, que se apresentavam alinhados e íntegros no momento dos exames.•	A suíte daquela edificação tinha o acesso ao seu interior feito por meio de uma porta de madeira, pivotante, com sistema de trancamento constituído de uma fechadura do tipo Yale. Durante a perícia, constatou-se que a fechadura da porta em questão encontrava-se com a lingueta exposta e com a chave inserida no cilindro da fechadura, pelo lado de dentro. Verificou-se, também, um quebramento típico daqueles produzidos em decorrência de arrombamento no portal daquela porta, na região destinada à instalação da contra-testa do sistema de trancamento e que o fragmento de madeira proveniente da quebra encontrava-se sobre o piso, na porção medial da parte posterior daquele cômodo, entre a cama e o rack de madeira ali localizado.•	Sobre a cama da suíte, via-se um cadáver, que será descrito no item 2.2, parcialmente coberto por um cobertor nas cores preta e branca, e com a cabeça orientada para o sudoeste, disposta às distâncias de 0,52 m (cinquenta e dois centímetros) da parede anterior e a 1,81 cm (um metro e oitenta e um centímetros) da parede direita daquele cômodo. No lençol que cobria a cama, à direita da cabeça do cadáver e verticalmente alinhada com o cogumelo de espuma verificado na sua face, que será descrito no item 2.2.4, observava-se a impregnação de material biológico (saliva).');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "31") {
+  selbox.options[selbox.options.length] = new Option('BALISTICA SELECIONADO','BASLITICA');
+  selbox.options[selbox.options.length] = new Option('DESTINO DOS VESTIGIOS','Os elementos balísticos mencionados foram recolhidos pelos peritos criminais, foram enviados à SPAL/IC para a pesquisa de sangue em suas superfícies e, posteriormente, foram encaminhados à Seção de Balística Forense (SBF/IC), onde estão arquivados (vide itens específicos a seguir).');
+  selbox.options[selbox.options.length] = new Option('CONCAVIDADES MULTIPLAS','•	quatro concavidades (M1 a M4) típicas daquelas produzidas por impacto de projétil expelido por arma de fogo (em trajetória de cima para baixo, da frente para trás e da esquerda para a direita em relação ao Lote 13) verificada sobre a via pública e dispostas, relativamente aos limites do lote, conforme a tabela 3 a seguir:');
+  selbox.options[selbox.options.length] = new Option('ESTOJOS','•	cinco estojos de cartucho percutido (doravante denominados E1 a E5), em cujas bases havia as inscrições CBC – 9 mm - +P, encontrados sobre o solo ao redor do corpo e dispostos, adotando-se como referência as suas distâncias em relação ao limite anterior e o limite esquerdo do lote, conforme tabela a seguir:');
+  selbox.options[selbox.options.length] = new Option('FRAGMENTO DE CAMISA','•	um fragmento de camisa de projétil expelido por arma de fogo, encontrado sobre a via defronte ao Lote 13 em um ponto que distava 6,51 m e 3,33 m, respectivamente, dos limites anterior e esquerdo do Lote.');
+  selbox.options[selbox.options.length] = new Option('PROJETIL','•	um projétil expelido por arma de fogo (P4), encontrado sobre o passeio defronte ao Lote 13 em um ponto que distava 2,21 m e 3,21 m, respectivamente, dos limites anterior e esquerdo do Lote.');
+  selbox.options[selbox.options.length] = new Option('PERFURAÇÃO EM PORTÃO METALÍCO','•	1 (uma) perfuração de formato circular, com aproximadamente 1,5 cm de diâmetro, típica daquela produzida pela passagem de projétil expelido por arma de fogo, localizada na placa metálica indicativa de endereço que estava instalada na calçada de concreto que margeava o conjunto 03, imediatamente adjacente à interseção entre as vias públicas que o serviam. Esta perfuração, doravante denominada P1, localizava-se a 2,29 m de altura em relação ao meio-fio e distava 0,10 m da projeção do alinhamento do limite nordeste e a 0,29 m da projeção do alinhamento do limite sudeste do Lote 24, ostentando características de ter sido produzida em disparo efetuado da região nordeste para sudoeste, com sentido ascendente.');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "32") {
+  selbox.options[selbox.options.length] = new Option('DROGAS SELECIONADO','DROGAS');
+  selbox.options[selbox.options.length] = new Option('COCAINA','XXX');
+  selbox.options[selbox.options.length] = new Option('CRACK','XXX');
+  selbox.options[selbox.options.length] = new Option('ESCTASY','XXX');
+  selbox.options[selbox.options.length] = new Option('LANÇA PERFUME','XXX');
+  selbox.options[selbox.options.length] = new Option('LSD','XXX');
+  selbox.options[selbox.options.length] = new Option('MACONHA','XXX');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "33") {
+  selbox.options[selbox.options.length] = new Option('OBJETOS SELECIONADO','OBJETOS');
+  selbox.options[selbox.options.length] = new Option('BICICLETA','•	uma bicicleta (Bicicleta 2) apresentando a inscrição “Topbike”, aro 26, dezoito marchas, de cor preta. A Bicicleta 2 estava tombada sobre o seu lado direito na Via de terra, em época recente, voltada para o leste, com seu eixo dianteiro e seu eixo traseiro distantes 1,91 m e 1,60 m, respectivamente, do limite anterior da “Chácara Amizade”. Sua posição foi correlacionada ao ponto de coordenadas geográficas 15º 59’ 47,3" sul e 48º 04’ 18,5" oeste');
+  selbox.options[selbox.options.length] = new Option('CHINELO','•	Ressalte-se que durante os exames foi observada a presença de um par de chinelos emborrachados, de marca “RIDER”, dispostos adjacentes à calçada que servia o limite nordeste do Conjunto 03/04, a aproximadamente 30 metros do Lote 24, conforme ilustrado no croqui (figura 2). Tais exemplares ostentavam solados de cor azul marinho, com deposição de terra e alças de cor branca, tendo sido recolhidos para o Instituto de Criminalística, onde foi submetido à coleta de esfregaços com o intuito de obter amostras biológicas para futuros exames que, porventura, se fizerem necessários');
+  selbox.options[selbox.options.length] = new Option('CHINELO / TIRA SOLTA','•	um chinelo de borracha branca, cuja tira era fixada na sola em três pontos (mas estava desprendida do ponto de fixação anterior) correspondente ao pé direito, da marca Havaianas, de tamanho 39/40, encontrado sobre a via que servia as porções oeste do Conjunto 21 e leste do Conjunto 20, em um ponto que distava 481 cm e 269 cm, respectivamente, dos limites oeste e sul do Lote 20.');
+  selbox.options[selbox.options.length] = new Option('CHINELO AFASTADOS','•	um par de chinelos apresentando a inscrição “havaianas”, de cor azul, tamanho 41/42. Estavam dispostos sobre a Via de terra, afastados entre si, estando o exemplar direito e o esquerdo distantes 2,41 m e 2,11 m, respectivamente, do limite anterior da “Chácara Amizade”. Ressalte-se que foram observadas sujidades de terra no par de chinelos, compatíveis com o local em que foram encontrados.');
+    selbox.options[selbox.options.length] = new Option('FACA','•	1 (uma) faca de mesa, de lâmina metálica com 10,5 cm de comprimento e 1,7 cm de largura máxima, pontiaguda e de gume único, serrilhado, de cabo plástico de cor azul escuro com 10,5 cm de comprimento, da marca “Tramontina”, localizada no interior da cozinha, sobre uma estante, a 0,48 m do limite posterior e 2,10 m do limite esquerdo deste cômodo (fotografias 10, 15 e 16) . Tal objeto foi recolhido e encaminhado à Seção de Perícias e Análises Laboratoriais – SPAL/IC para a realização de exames específicos, posteriormente descritos');
+	selbox.options[selbox.options.length] = new Option('MOCHILA','•	uma mochila preta, sobre a superfície asfáltica da Via B, localizada à esquerda do Lote 4, posicionada a 6,30 m da lateral esquerda e 0,20 m antes do alinhamento do limite anterior deste mesmo lote. Dentro da mochila havia: ');
+  selbox.options[selbox.options.length] = new Option('PISCINA','•	A região adjacente à churrasqueira compreendia uma área retangular, de acesso livre , revestida em piso cerâmico, de aproximadamente 67m2, onde encontrava-se instalada em sua porção central uma piscina, com dimensões de 5,50 m por 7,50 m, revestida internamente por pastilhas de cor azul em tons variados e com borda em granito, de cor preta. A piscina encontrava-se coberta, em quase sua totalidade, por um material sintético, tipo lona, de cor azul, afixada ao piso cerâmico por alças/hastes metálicas unidos entre si por uma corda sintética também de cor azul que o tencionava sobre a água que preenchia a piscina. Assinale-se que a distância entre o nível da água e a borda da piscina era de 15 cm.');
+  selbox.options[selbox.options.length] = new Option('PISCINA DE ÁGUA CORRENTE','•	A piscina, objeto do presente exame, consistia em um reservatório de água corrente construído com o uso de elementos rochosos (bordas), cascalho e cimento (piso), com abastecimento por canos plásticos localizados próximos à borda direita e escoamento localizado no extremo posterior esquerdo. Estava inserida em uma área delimitada por cerca construída por tela metálica, sustentada por mourões de madeira e por muro em alvenaria, este, na porção anterior, possuía aproximadamente 10 m de largura e 21 m de comprimento, sendo sua profundidade variável entre 0,86 m (porção direita) e 1,78 m (porção centro-esquerda), ambas as medidas realizadas até o nível da água. A diferença de profundidade aferida era compatível com a topografia do terreno. As bordas encontravam-se aproximadamente 0,50 m acima do nível da água. O acesso ao interior de tal piscina, por meio de sua porção anterior podia ser realizado livremente e sem obstáculos. No interior da piscina, localizado junto ao limite posterior e a 6,50 m do seu limite esquerdo, encontrava-se um cadáver – que será descrito em item próprio –, totalmente submerso e em decúbito dorsal. Ressalte-se que, para a realização dos exames perinecroscópicos, foi realizada a retirada do corpo por uma equipe especializada do Corpo de Bombeiros Militar do Distrito Federal – CBMDF. Foram coletadas amostras biológicas do cadáver.');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "34") {
+  selbox.options[selbox.options.length] = new Option('SANGUE SELECIONADO','SANGUE');
+  selbox.options[selbox.options.length] = new Option('DESTINO','Dos gotejamentos de sangue citados foram coletadas amostras, as quais foram enviados à Seção de Pesquisas e Análises Laboratoriais deste Instituto SPAL/IC), conforme item específico a seguir.');
+  selbox.options[selbox.options.length] = new Option('CONCENTRAÇÃO','•	uma concentração de sangue, doravante denominada CS, localizada sobre a superfície asfáltica da via pública que servia o Conjunto 03 a sudeste, próximo à interseção com a via pavimentada em pedras, com escorrimento em direção ao limite nordeste do Lote 24, ocupando uma área com dimensões máximas de 1,99 m x 0,42 m, estando o seu centro distante 2,41 m da projeção do alinhamento do limite nordeste do lote e 1,81 m da projeção do alinhamento do limite sudeste do lote (fotografias 03 e 04). Amostras de CS foram coletadas para a realização de análises laboratoriais, sendo posteriormente descritas.');
+  selbox.options[selbox.options.length] = new Option('CONCENTRAÇÃO COM ESPARGIMENTOS RADIAIS','•	uma concentração de sangue associada a espargimentos radiais, disposta sobre o piso e sobre um elemento rochoso próximo à porta de acesso a Res2, doravante referenciada como CS2, com área de 1,01 m por 0,62 m, com centro distante 4,17 m do limite anterior e 0,75 m do limite esquerdo do corredor. Amostras de CS2 foram recolhidas e encaminhas para realização de exames específicos, sendo posteriormente descritas.');
+  selbox.options[selbox.options.length] = new Option('CONTATO','•	1 (uma) mancha de sangue– MS1, produzida por contato, localizada sobre o piso da sala, distante 1,58 m e 2,46 m dos limites anterior e esquerdo deste cômodo, respectivamente. Desta mancha foram coletadas amostras e encaminhadas para a Seção de Perícias e Análises Laboratoriais – SPAL/IC para a realização de exames específicos, posteriormente descritos');
+  selbox.options[selbox.options.length] = new Option('ESPARGIMENTO','•	manchas de sangue produzidas por projeção do tipo espargimento em padrão não linear, verificadas na parede existente junto ao portal posterior da porta do banheiro, reunidas em dois grupos, até uma altura de 0,9 m.');
+  selbox.options[selbox.options.length] = new Option('GOTEJAMENTO','•	gotejamentos de sangue, observados na via que servia as porções oeste do Conjunto 21 e leste do Conjunto 20, em um ponto que distava 269 cm e 229 cm, respectivamente, dos limites oeste e sul do Lote 20 ');
+  selbox.options[selbox.options.length] = new Option('GOTEJAMENTO FORMANDO TRILHA','•	uma trilha de gotejamentos de sangue, cuja análise das gotículas satélites indicava que ela se iniciava na via pública que servia a porção nordeste do Conjunto 13, em um ponto situado 1,9 m e 5,25 m, respectivamente, dos limites noroeste e sudoeste do Lote 1, e se findava junto ao cadáver, perfazendo 37,3 m no total.');
+  selbox.options[selbox.options.length] = new Option('TRILHA DE PEGADAS CALÇADO','•	duas manchas de sangue produzidas por impressão parcial de solado de calçado de, aproximadamente, 24 cm de comprimento, as quais estavam orientadas no sentido da sala para a parte externa da unidade habitacional ');
+  selbox.options[selbox.options.length] = new Option('TRILHA DE PEGADAS DESCALÇADO','•	trilha de manchas de sangue produzidas por impressão parcial de pés descalços de, aproximadamente, 23,5 cm de comprimento, disposta no piso entre a posição do cadáver e o colchão existente no quarto posterior direito, a qual estava orientada no sentido da cozinha conjugada à área de serviço para o quarto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "35") {
+  selbox.options[selbox.options.length] = new Option('OUTROS SELECIONADO','OUTROS');
+  selbox.options[selbox.options.length] = new Option('SISTEMA DE FORCA','DO SISTEMA DE FORCA DESCRIÇÃO O sistema de forca em que a vítima encontrava-se suspensa compreendia dois segmentos de corda, de cor vermelha, com 1,2 cm de diâmetro, que compunham guias para condução animal, sendo que em uma das extremidades de ambos havia uma alça do próprio material e na outra uma alça metálica. Estavam dispostos verticalmente, unidos entre si pelas alças metálicas, sendo o segmento superior com 0,97 m de comprimento e o segmento inferior com 0,80 m de comprimento. Envolviam a região cervical da vítima por meio de uma laçada corrediça, localizada a 1,38 m do caibro de madeira, de seção retangular, onde encontrava-se afixada (o segmento de corda estava disposto ao redor do caibro que estava a 2,76 m de altura em relação ao piso).  EFICIÊNCIA O segmento de corda periciado era eficiente para provocar constrição no pescoço e assim o enforcamento da vítima.');
+  selbox.options[selbox.options.length] = new Option('CHUVA','Assinale-se que os exames se deram sob precipitação pluviométrica.');
+  selbox.options[selbox.options.length] = new Option('CERCA ELÉTRICA','O referido lote era delimitado externamente por muros de alvenaria encimados por ofendículo do tipo cerca elétrica.');
+  selbox.options[selbox.options.length] = new Option('ÁREA PARA CHURRASQUEIRA','Internamente, era ocupado por duas edificações térreas independentes: uma localizada na porção anterior direita, que compreendia uma construção parcialmente vazada, com piso em porcelanato e telhas de cerâmica, doravante referenciada como área da churrasqueira adjacente a uma piscina e; uma construção localizada na porção centro-posterior, que compreendia a residência do lote. Por sua vez, a região da área da churrasqueira compreendia uma área retangular revestida em piso cerâmico, com aproximadamente 68 m2, onde estavam instalados uma churrasqueira e armários junto ao limite direito e, ainda, dois cômodos localizados em sua porção anterior esquerda, os quais: um banheiro, à direita e uma sauna, à esquerda.');
+  selbox.options[selbox.options.length] = new Option('SAUNA','A sauna, localizada na porção anterior esquerda da área da churrasqueira, caracterizava-se por ser um cômodo de formato retangular (1,80 m x 2,52 m), limitado por paredes de alvenaria, à exceção da porção esquerda, que era limitada por uma lâmina de vidro que proporcionava visibilidade à área externa, especificamente à área da piscina. O referido cômodo era acessado por uma porta instalada no limite direito, com estrutura em alumínio de cor branca e com um vidro de formato retangular em sua porção superior, o qual funcionava como visor. O fechamento dessa porta era realizado por pressão, contudo, não se encontrava em perfeito estado de funcionamento, por apresentar sinais de corrosão e perdas de estrutura, o que permitiam acesso facilitado ao interior da sauna. A sauna era ocupada por um banco de alvenaria, revestido em granito preto, em formato de L, disposto junto às paredes que limitavam o cômodo em sua porção anterior e à direita. No limite posterior esquerdo, ao nível do piso cerâmico que revestia internamente a sauna, havia uma área de formato quadrado, com aproximadamente 1,30 m2,  que permitia o ingresso, a partir deste cômodo, ao leito da piscina. Esta área apresentava bordas de granito, e era revestida internamente com pastilhas cerâmicas de cor azul, assim como as que revestiam a porção da piscina externa à sauna. Contudo, encontrava-se desprovida de lona de proteção (que se encontrava dobrada sobre o banco) e apresentava-se com nível de água em uma profundidade de 1,35 m, assim como o restante da piscina. Assinale-se que o piso que revestia internamente a sauna encontrava-se predominantemente molhado.');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "41") {
+  selbox.options[selbox.options.length] = new Option('IDENTIFICAÇÃO SELECIONADO','IDENTIFICAÇÃO');
+  selbox.options[selbox.options.length] = new Option('HOMEM','XXX');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "42") {
+  selbox.options[selbox.options.length] = new Option('POSIÇÃO SELECIONADO','POSIÇÃO');
+  selbox.options[selbox.options.length] = new Option('DECUBITO DORSAL','Decúbito dorsal; cabeça virada para a direita, com a face direita apoiada no asfalto; membros inferiores fletidos e voltados para a direita, sendo que o esquerdo encontrava-se sobre o direito; membro superior esquerdo junto ao tronco e com o antebraço sobre o abdômen; e membro superior direito afastado de um ângulo de, aproximadamente, 30o do tronco e semi-fletido; e quadril voltado para a direita .');
+  selbox.options[selbox.options.length] = new Option('DECUBITO VENTRAL','DECUBITO VENTRAL');
+  selbox.options[selbox.options.length] = new Option('DECUBITO LATERAL DIREITO','Encontrava-se em decúbito lateral direito; membros superiores flexionados, o direito sob o tronco e o esquerdo ao lado deste; membros inferiores flexionados, o esquerdo parcialmente sobre o direito; cabeça apoiada no solo pelo lado direito da face');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  
+}
+if (chosen == "43") {
+  selbox.options[selbox.options.length] = new Option('VESTES E PERTENCES SELECIONADO','VESTES E PERTENCES');
+  selbox.options[selbox.options.length] = new Option('CAMISETA','XXX');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "44") {
+  selbox.options[selbox.options.length] = new Option('PERINECROSCOPIA SELECIONADO','PERINECROSCOPIA');
+  selbox.options[selbox.options.length] = new Option('TODOS','Perinecroscopia: Ao examinarem externamente o corpo, os peritos criminais constataram que estava nas fases cromática e gasosa da putrefação, com:•	Livores hipostáticos fixos na face posterior do corpo, à exceção das áreas comprimidas;•	Escurecimento da pele, especialmente da cabeça e da face;•	Flictenas espalhadas pela superfície do corpo;•	Destacamento epidérmico;•	Circulação póstuma de Brouardel;•	Protrusão lingual;•	Distensão abdominal e genital;•	Rigidez cadavérica em instalação, perceptível nos membros e na articulação temporomandibular;•	Livores hipostáticos móveis, na região posterior do corpo;•	Cianose labial e dos leitos ungueais;•	Espuma rósea na boca e nas narinas;•	Distensão abdominal;•	Enrugamento da pele das mãos e dos pés.•	Rigidez cadavérica em instalação, perceptível nos membros e na articulação temporomandibular;•	Livores hipostáticos móveis, na região  do corpo, à exceção das áreas comprimidas;•	Uma ferida perfurocontusa, doravante denominada OE, na região , com características cutâneas compatíveis com as daquelas produzidas pela entrada de projétil expelido por arma de fogo, em disparo efetuado a distância;•	Uma ferida perfurocontusa, doravante denominada OS, na região , com características compatíveis com as daquelas produzidas pela saída de projétil expelido por arma de fogo;•	Uma protuberância na região , com características compatíveis com as daquelas produzidas por projétil em região subcutânea;•	Uma ferida perfuroincisa, doravante denominada F, na região , em forma de botoeira, medindo cm, com bordos regulares, uma de suas extremidades arredondada e a outra angular, esta voltada para ;•	Escoriações em placa nos joelhos;•	Manchas de sangue produzidas por escorrimento a partir da  , com sentido de produção descendente, compatíveis com a posição em que foi encontrado o cadáver.');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+if (chosen == "51") {
+  selbox.options[selbox.options.length] = new Option('OUTROS SELECIONADO','OUTROS');
+  selbox.options[selbox.options.length] = new Option('ISOLAMENTO','Quando da chegada dos peritos criminais, uma guarnição da Polícia Civil do Distrito Federal da 8a DP, comandada pelo agente Alberto, matrícula 78.263-7, realizava o isolamento e a preservação do local');
+    selbox.options[selbox.options.length] = new Option('ISOLAMENTO FEITO POR OUTRO','Quando da chegada da equipe pericial, o local examinado não se encontrava isolado ou preservado por agentes estatais. O acesso ao interior do lote foi franqueado pela moradora Denise, que ali se encontrava');
+  selbox.options[selbox.options.length] = new Option('PAPILOSCOPIA','Conforme Instrução Normativa nº 138 da Polícia Civil do Distrito Federal, de 25 de maio de 2011, sob supervisão e coordenação da chefe da equipe pericial – perita criminal Maitê Cevallos Mijan -, o papiloscopista policial escalado ficou incumbido de pesquisar, revelar, coletar e comparar as impressões papiloscópicas porventura existentes no local. As demais informações relativas aos fragmentos papiloscópicos deixam de ser inseridas no contexto deste Laudo de Perícia Criminal, uma vez que elas não foram disponibilizadas pelo Instituto de Identificação ao Instituto de Criminalística.');
+  selbox.options[selbox.options.length] = new Option('IMAGENS DE CÂMERA','Ressalte-se que haviam sistemas de monitoramento instalados com vistas para o exterior da residência e do lote, que se encontravam em funcionamento. No interior da cozinha havia um monitor, de marca “Samsumg” que exibia imagens em tempo real das diferentes vistas dos sistemas de monitoramento instalado, sendo que o horário apontado  indicava atraso de 1 hora e 37 minutos em relação ao horário de Brasília, no momento em que foram averiguados. Foi solicitado ao Sr. Heuler Raniêr Soares Mendonça, que franqueou o acesso ao interior do Lote 3B, portador do RG: 1.331.273 – DF, que as gravações porventura ali presentes, que não estavam disponíveis no momento dos exames, fossem encaminhadas à 38a Delegacia de Polícia.');
+  selbox.options[selbox.options.length] = new Option('DESALINHO','•	desalinho no interior de um dos quartos da residência, o que continha duas camas de solteiro, onde foi possível observar a modificação de uma estante em relação a sua possível posição original, bem como objetos localizados sobre o piso, com características de terem adquirido aquela posição em momento recente');
+  selbox.options[selbox.options.length] = new Option('DNA','Parte das amostras citadas no item anterior foi encaminhada para a Central de Guarda e Custódia de Vestígios – CGCV desta Polícia Civil, para arquivamento e realização de futuros exames que porventura se fizerem necessários.');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+  selbox.options[selbox.options.length] = new Option('TITULO','texto');
+}
+}
+</script>
+
+    <td><form name="theform" onSubmit="CheckForm()">
+<script type="text/javascript">Setup();</script>
+    <td>
+    <table width="200" border="0">
+      <tr>
+        <td colspan="2"><strong>SACCOLA &reg; - Sistema Automatizado Cearense de Croquis, Ocorr&ecirc;ncias e Laudos</strong></td>
+      </tr>
+      <tr>
+        <td><p>
+          <select name="optone" size="1"  onChange="setOptions(document.theform.optone.options[document.theform.optone.selectedIndex].value,document.theform.opttwo);">
+            <option value=" " selected="selected"> </option>
+            <option value="1">MODELOS</option>
+            <option value="2">LOCAL</option>
+            <option value="3">VESTIGIOS</option>
+            <option value="4">CADAVER</option>
+            <option value="5">OUTROS</option>
+          </select>
+          <br />
+          &nbsp;<br />
+          <select name="opttwo" size="1" onChange="setOptions(document.theform.opttwo.options[document.theform.opttwo.selectedIndex].value,document.theform.optthree);">
+            <option value=" " selected="selected">SELECIONE PRIMEIRO ACIMA</option>
+          </select>
+          <br />
+          &nbsp;<br />
+          <select name="optthree" onChange="document.theform.modeloVESTIGIOS.value=this.value" id="optthree">
+            <option value=" " selected="selected">SELECIONE PRIMEIRO ACIMA</option>
+          </select>
+          </p>
+          <p><button type="button" onclick="myFunction()">SELECIONAR</button>
+
+<script>
+function myFunction() {
+    document.getElementById("modeloVESTIGIOS").select();
+}
+</script>
+            <script type="text/javascript" src="jquery.min.js"></script>
+            <script>
+$(document).ready(function () {
+    $('#send2').click(function () {
+        var text = $('#modeloVESTIGIOS').val();
+        $('#textoVESTIGIOS').html($('#textoVESTIGIOS').html() + text);
+        $('#modeloVESTIGIOS').val('');
+    });
+});
+          </script>
+        </p></td>
+        <td><iframe src="croqui.html" name="croqui" width="520" marginwidth="0px" height="200px" marginheight="0px" scrolling="yes" frameborder="0" id="formulario" style="border:0px #FFFFFF none;"></iframe></td>
+      </tr>
+    </table>
+    <script>
+$(document).ready(function () {
+    $('#send').click(function () {
+        var text = $('#modeloVESTIGIOS').val();
+        $('#textolaudo').html($('#textolaudo').html() + text);
+        $('#modeloVESTIGIOS').val('');
+    });
+});
+</script>
+    <form ID="in2">
+    <textarea id="modeloVESTIGIOS" cols="68" rows="10" name="modeloVESTIGIOS" style="font-size: 14pt"></textarea>
+        </form>
+<script type="text/javascript">
+<!--//
+function goToPage763(mySelect)
+{
+PageIndex2=mySelect.selectedIndex;
+{
+if
+(
+mySelect.options[PageIndex2].value != "none"
+)
+{
+//this is the key code in the JavaScript to open the new page in
+//the iframe:-
+frames['croqui'].location.href = mySelect.options[PageIndex2].value;
+}
+}
+}
+//-->
+</script>
+
+<form name="selecionarcroqui">
+<textarea id="textolaudo" cols="68" rows="19" name="textolaudo" style="font-size: 14pt" ></textarea>
